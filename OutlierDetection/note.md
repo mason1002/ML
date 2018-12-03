@@ -63,3 +63,6 @@ matrix([[1, 2, 3, 4, 5, 6]])
 https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html
 ### How to apply sklearn's EllipticEnvelope to find out top outliers in the given dataset?
 https://stackoverflow.com/questions/33778802/how-to-apply-sklearns-ellipticenvelope-to-find-out-top-outliers-in-the-given-da
+
+# Reference
+https://blog.csdn.net/scdxmoe/article/details/53741521
