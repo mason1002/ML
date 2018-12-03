@@ -61,6 +61,7 @@ matrix([[1, 2, 3, 4, 5, 6]])
 ```
 ## sklearn.covariance.EllipticEnvelope
 https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html
+- covariance:协方差
 ### How to apply sklearn's EllipticEnvelope to find out top outliers in the given dataset?
 https://stackoverflow.com/questions/33778802/how-to-apply-sklearns-ellipticenvelope-to-find-out-top-outliers-in-the-given-da
 
