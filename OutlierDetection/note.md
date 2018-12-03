@@ -1,6 +1,11 @@
-# numpy.r_
+# Outlier Detection
 
-## https://docs.scipy.org/doc/numpy/reference/generated/numpy.r_.html
+https://scikit-learn.org/stable/modules/outlier_detection.html
+
+
+## numpy.r_
+
+### https://docs.scipy.org/doc/numpy/reference/generated/numpy.r_.html
 ### row-wise merging
 numpy.r_ = <numpy.lib.index_tricks.RClass object>
 Translates slice objects to concatenation along the first axis.
@@ -10,7 +15,7 @@ This is a simple way to build up arrays quickly. There are two use cases.
 If the index expression contains comma separated arrays, then stack them along their first axis.
 If the index expression contains slice notation or scalars then create a 1-D array with a range indicated by the slice notation.
 
-## Example
+### Example
 ```
 >>>V = array([1,2,3,4,5,6 ])
 >>>Y = array([7,8,9,10,11,12])
@@ -54,3 +59,7 @@ array([[1, 4],
  >>> np.r_['r',[1,2,3], [4,5,6]]
 matrix([[1, 2, 3, 4, 5, 6]])
 ```
+## sklearn.covariance.EllipticEnvelope
+https://scikit-learn.org/stable/modules/generated/sklearn.covariance.EllipticEnvelope.html
+### How to apply sklearn's EllipticEnvelope to find out top outliers in the given dataset?
+https://stackoverflow.com/questions/33778802/how-to-apply-sklearns-ellipticenvelope-to-find-out-top-outliers-in-the-given-da
