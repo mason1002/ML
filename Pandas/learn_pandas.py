@@ -70,3 +70,26 @@ df.head(5)
 # Manipulating structure (groupby, unstack, pivot)
 # Groupby
 df.groupby(df.year // 10 * 10).max()
+
+decade_rain = df.groupby([df.year // 10 * 10, df.rain_octsep // 1000 * 1000]) \
+    [['outflow_octsep', 'outflow_decfeb', 'outflow_junaug']].mean()
+
+decade_rain
+
+# Unstacking
+decade_rain.unstack(0)
+
+# More unstacking
+decade_rain.unstack(1)
+
+
+# Create a new dataframe containing entries which has rain_octsep values of > 1250
+high_rain = df[df.rain_octsep > 1250]
+high_rain
+
+# Pivoting
+# does set_index, sort_index and unstack in a row
+high_rain.pivot('year', 'rain_octsep')[['outflow_octsep', 'outflow_decfeb', 'outflow_junaug']].fillna('')
+
+# Saving data to new csv
+df.to_csv('uk_rain.csv')
